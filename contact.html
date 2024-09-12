@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="import" href="about.html">
+</head>
+<body>
+    <section class="benefits-section">
+        <h1 class="title">Get in Touch with Us Today</h1>
+        <p class="intro-text">
+            Need more information about our offerings or have a specific request? Simply fill out the form below, and we’ll ensure your message reaches the right person.
+        </p>
+      
+      
+      </section>
+      
+<style>
+  
+* {
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.benefits-section {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.8em;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+span {
+    color: red;
+}
+
+.phone-container {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="tel"], input#countryCode {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.captcha {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #eaeaea;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+/* Add this CSS for fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.form-container, .title, .intro-text {
+    animation: fadeIn 1.5s ease-in-out;
+}
+/* Highlight input fields on focus */
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+/* Slide-in effect for form elements */
+@keyframes slideIn {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+input, select, textarea {
+    animation: slideIn 1s ease-in-out;
+}
+
+
+
+</style>
+<div class="page5-circle"></div>
+<div class="page5-circle"></div>
+<div class="form-container">
+    <h2>Fill out the form below if you would like to reach out to us.</h2>
+    <form action="/submit_form" method="POST">
+        <label for="name">Name <span>*</span></label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+
+        <label for="designation">Designation <span>*</span></label>
+        <input type="text" id="designation" name="designation" placeholder="Designation" required>
+
+        <label for="organization">Organization <span>*</span></label>
+        <input type="text" id="organization" name="organization" placeholder="Organization" required>
+
+        <label for="phone">Phone <span>*</span></label>
+        <div class="phone-container">
+            <input type="text" id="countryCode" name="countryCode" placeholder="+91" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+        </div>
+
+        <label for="email">Email <span>*</span></label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+            <option value="">Select...</option>
+            <option value="general">General Inquiry</option>
+            <option value="support">Support</option>
+            <option value="partnership">Partnership</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message here..." rows="4"></textarea>
+
+        <label for="verification">Verification Code <span>*</span></label>
+        <input type="text" id="verification" name="verification" placeholder="Enter the code" required>
+
+        <div class="captcha">F9GMR2</div> <!-- You can replace this with an actual captcha implementation -->
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <title>Due Drop</title>   
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/> 
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="2.css" />
+  </head>
+
+  <body>
+     <!-- <div id="nav">
+        <span id="menu-icon" onclick="openMenu()">☰</span>
+      
+         Sidebar navigation 
+        <div id="mobile-nav" class="mobile-nav">
+          <span id="close-icon" onclick="closeMenu()">✖</span>
+          
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="ourapproch.html">Our Approach</a></li>
+            <li><a href="plastic-credit.html">Plastic Credits</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div> 
+      </div> - -->
+<!--       
+      <div id="nav">
+      <div class="side">
+        <li onclick=showSlidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" fill="black"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg></a> </li>
+
+        <ul class="sidebar">
+  
+          <li onclick=hideSidebar() > <a href="#"></a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="
+            26" fill="black"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg></li>
+        
+            <li> <a href="index.html">Home</a>
+          </li>
+          <li> <a href="about.html">About Us</a>
+          </li>
+          <li> <a href="ourapproch.html">Our Approach</a>
+          </li>
+          <li> <a href="plastic-credit.html">Plastic Credits</a> 
+          </li>
+          <li> <a href="contact.html">Contact Us</a> 
+          </li>
+
+         </ul>
+
+      </div>  
+       <ul>
+        <img data-nav="img" src="due-drop-high-resolution-logo-transparent.png" alt="">
+        <li> <a href="index.html">Home</a>
+        </li>
+        <li> <a href="about.html">About Us</a>
+        </li>
+        <li> <a href="ourapproch.html">Our Approach</a>
+        </li>
+        <li> <a href="plastic-credit.html">Plastic Credits</a> 
+        </li>
+        <li> <a href="contact.html">Contact Us</a> 
+        </li>
+      
+
+       </ul>
+    </div>  -->
+    
+   
+    <div id="nav">
+        <div class="side">
+          <li onclick="showSidebar()"> 
+            <a href="#">
+              <svg class="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" fill="#95c11e">
+                <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+              </svg>
+            </a> 
+          </li>
+      
+          <ul class="sidebar">
+            <li onclick="hideSidebar()"> 
+              <a href="#"></a> 
+              <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" fill="#95c11e">
+                <path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path>
+              </svg>
+            </li>
+            <li><a  href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="ourapproch.html">Our Approach</a></li>
+            <li><a href="plastic-credit.html">Plastic Credits</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+      <div id="sid">
+        <ul>
+            <img data-nav="img" src="due-drop-high-resolution-logo-transparent.png" alt="">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="ourapproch.html">Our Approach</a></li>
+            <li><a href="plastic-credit.html">Plastic Credits</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+      </div>
+     
+      </div>
+      
+</div> 
+
+    <div id="main">
+        <div id="page1">
+          <h1>Creating a Circular Economy for a Healthier Planet</h1>
+          <h2>Join the Movement Towards Zero Waste</h2>
+          <p>
+            At Due Drop, we believe in the power of circularity. By recycling plastic and reintegrating it into the economy, we reduce pollution, conserve resources, and support a sustainable future. Join us in driving positive change for our environment and our communities.
+          </p>   
+    
+        </div>
+        <div id="moving-div">
+          <div id="blur-left"></div>
+          <div class="move">
+           <h5>Sustainable Solutions</h5>
+           <h5>Circular Economy</h5>
+           <h5>Plastic Waste Reduction</h5>
+           <h5>Environmental Impact</h5>
+           <h5>Eco-Friendly Innovation</h5>
+          </div>
+          <div class="move">
+            <h5>Sustainable Solutions</h5>
+            <h5>Circular Economy</h5>
+            <h5>Plastic Waste Reduction</h5>
+            <h5>Environmental Impact</h5>
+            <h5>Eco-Friendly Innovation</h5>
+           
+          </div>
+          <div class="move">
+            <h5>Sustainable Solutions</h5>
+            <h5>Circular Economy</h5>
+            <h5>Plastic Waste Reduction</h5>
+            <h5>Environmental Impact</h5>
+            <h5>Eco-Friendly Innovation</h5>
+        </div>
+          <div id="blur-right"></div>
+      </div>
+
+      <!-- end -->
+    </div>
+ 
+   
+    <div class="page2">
+      <h1>We are Due Drop, A Creative Collective Made to Unlock Your Brand’s Potential</h1>
+      <p>"We are Due Drop, Pioneering the Path to a Cleaner Planet"
+        At Due Drop, our mission is to seamlessly blend sustainability with innovation. By focusing on reducing plastic waste and promoting eco-friendly initiatives, we help your business make a lasting positive impact on the environment. Together, we can inspire change, reduce pollution, and build a brighter, greener future for generations to come.</p>
+      <div class="page2-container">
+          <div class="page2-left">
+             <p>"What Are Plastic Credits?"
+            
+              Plastic credits are a certified system that quantifies the collection and recycling of plastic waste. Each credit symbolizes one ton of plastic removed from the environment, providing companies with an actionable way to meet sustainability targets. By investing in plastic credits, businesses take real steps to offset their environmental footprint and contribute to the global fight against plastic pollution.</p>
+              <div class="page2-circle"></div>
+              <div class="page2-circle"></div>
+          </div>
+          <div class="page2-right">
+            <p>The Importance of Plastic Credits"
+              Plastic credits not only drive environmental improvements but also spark social and economic progress. These credits fund essential recycling projects, create dignified jobs in waste management, and encourage innovation in reducing plastic dependency. Investing in plastic credits means being part of a global solution to reduce waste and foster sustainability.</p>
+              <a href="about.html" class="animated-button">About Us</a>
+
+          </div>
+      </div>
+
+  </div>
+      
+  
+  
+    <!-- lazecv -->
+    <div id="page5">
+      <a href="contact.html" class="animated-button">contact Us</a>
+
+      <div id="page5-right">
+         <p>At Due Drop, we are dedicated to transforming plastic waste into a valuable resource through innovative solutions. Our approach bridges the gap between environmental sustainability and community empowerment, creating a circular economy that benefits both people and the planet.</p>
+          <div id="page5-content">
+              <div class="uiux">
+                  <details open>
+                      <summary>
+                          <h1></h1>
+                          <div id="flex">
+                              <h4>Circular Economy</h4>
+                              <h4>Sustainability</h4>
+                              <h4>Plastic Waste Management</h4>
+                              <h4>Community Empowerment</h4>
+                          </div>
+                      </summary>
+                      <div id="page-container">
+                          <div class="page5-elem">
+                              <div class="over"></div>
+                              <h3>Upstream Measures</h3>
+                             <p>Upstream strategies focus on reducing plastic production at its source. By redesigning materials and packaging, we aim to cut down on waste before it enters the ecosystem.</p>
+                          </div>
+                          <div class="page5-elem">
+                              <div class="over"></div>
+                              <h3>downstream Measures </h3>
+                             <p>Downstream measures target effective recycling and waste management solutions. Our goal is to ensure that plastic waste is captured, recycled, and repurposed, reducing environmental harm.</p>
+                          </div>
+                          <div class="page5-elem">
+                              <div class="over"></div>
+                              <h3>The plastic project impact</h3>
+<p>This project is more than waste management—it’s about creating a sustainable system that benefits both the environment and local communities. The ripple effect of this initiative extends far beyond plastic reduction.</p>
+                          </div>
+                          <div class="page5-elem">
+                              <div class="over"></div>
+                              <h3>benifit of quality asurance</h3>
+                            <p>High-quality recycling processes not only reduce plastic waste but also produce superior raw materials for future use, ensuring a closed-loop system that minimizes environmental impact.</p>
+                          </div>
+                      </div>
+                  </details>
+              </div>
+
+<!--      
+    <div id="page6">
+      <button>Became a client</button>
+      <div class="page6-right">
+          <p><span></span>Lorem ipsum dolor sit amet consectetur, <span></span>adipisicing elit. Qui aut doloremque enim laudantium fugit ipsa, rem labore nisi. Porro sint veritatis quisquam repellendus omnis numquam, dignissimos quaerat voluptatibus enim, iure suscipit. Nihil voluptate quae expedita quod aliquid quam? Praesentium, doloremque!</p>
+
+              <div id="page6-content">
+                  <div class="uiux">
+
+                      <details open>
+                          <summary>
+                              <div class="page6-section">
+                                  
+                                  <h1>UI / UX Research <span><i class="ri-arrow-down-s-line"></i></span></h1>   
+                                  <div class="flex-6">
+                                      <h4>ux audit</h4>
+                                      <h4>ui design</h4>
+                                      <h4>ux design</h4>
+                                      <h4>ux reasearch</h4>
+                                  </div>    
+                          </summary>
+                          <div id="page6-container">
+                              <div class="page6-elem">
+                                  <div class="over"></div>
+                                  <h2>UX Research</h2>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corporis. Eaque deleniti, non adipisci rerum est officia maiores suscipit nobis.</p>
+                                  <i class="ri-arrow-right-up-line"></i>           
+                              </div>
+                            </div>
+                            <div id="page6-container">
+                              <div class="page6-elem">
+                                  <div class="over"></div>
+                                  <h2>UX Research</h2>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corporis. Eaque deleniti, non adipisci rerum est officia maiores suscipit nobis.</p>
+                                  <i class="ri-arrow-right-up-line"></i>           
+                              </div>               
+                            </div>
+                            <div id="page6-container">
+                              <div class="page6-elem">
+                                  <div class="over"></div>
+                                  <h2>UX Research</h2>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corporis. Eaque deleniti, non adipisci rerum est officia maiores suscipit nobis.</p>
+                                  <i class="ri-arrow-right-up-line"></i>           
+                              </div>
+                            </div>
+                            <div id="page6-container">
+                              <div class="page6-elem">
+                                  <div class="over"></div>
+                                  <h2>UX Research</h2>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corporis. Eaque deleniti, non adipisci rerum est officia maiores suscipit nobis.</p>
+                                  <i class="ri-arrow-right-up-line"></i>           
+                              </div> 
+                            </div>         
+                      </details>
+                  </div>          
+              </div>          
+
+            <div class="product-design">
+              <details>
+                  <summary>
+                      <div class="page6-section">
+                          <h1>Product Design</h1>
+                          <div class="flex-6">
+                              <h4>website design</h4>
+                              <h4>mobile app</h4>
+                              <h4>web app</h4>
+                              <h4>saas</h4>
+                          </div>  
+                    </div>
+                  </summary>
+                  <div id="page6-container">
+                      <div class="page6-elem">
+                          <div class="over"></div>
+                          <h2>UX Research</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corporis. Eaque deleniti, non adipisci rerum est officia maiores suscipit nobis.</p>
+                          <i class="ri-arrow-right-up-line"></i>           
+                      </div>
+                    </div>
+                    <div id="page6-container">
+                      <div class="page6-elem">
+                          <div class="over"></div>
+                          <h2>UX Research</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corporis. Eaque deleniti, non adipisci rerum est officia maiores suscipit nobis.</p>
+                          <i class="ri-arrow-right-up-line"></i>           
+                      </div>               
+                    </div>
+                    <div id="page6-container">
+                      <div class="page6-elem">
+                          <div class="over"></div>
+                          <h2>UX Research</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corporis. Eaque deleniti, non adipisci rerum est officia maiores suscipit nobis.</p>
+                          <i class="ri-arrow-right-up-line"></i>           
+                      </div>
+                    </div>
+                    <div id="page6-container">
+                      <div class="page6-elem">
+                          <div class="over"></div>
+                          <h2>UX Research</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corporis. Eaque deleniti, non adipisci rerum est officia maiores suscipit nobis.</p>
+                          <i class="ri-arrow-right-up-line"></i>           
+                      </div> 
+                    </div>         
+
+              </details>          
+          </div>   
+      </div>
+  </div>
+ -->
+  </div>
+   
+        <!-- bootstrap -->
+        <!-- <div class="container ">
+          <div class="row "data-aos="zoom-in-out" data-aos-offset="200">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <h1>What do you <span class="text-primary"> want to know?</span></h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi nisi, atque facilis rerum facere unde quos officia ipsum at?</p>
+              <button type="button" class="btn btn-secondary mb-5">More about me</button>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        My hobbies
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        My Qualification
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        My dreams
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+              <  -->
+            
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 m-auto text-center">        
+              <img src="img4.jpg" class="img-fluid img-thumbnail "data-aos="zoom-in" data-aos-offset="200" alt="">
+            </div>    
+          </div>
+        </div> 
+       <!--  -->
+
+      <div id="page10">
+        <div id="about-us">
+          <div id="about">
+              <h3>Our Planet Needs Us</h3>
+              <p>
+                Our planet is at a critical tipping point. Every piece of plastic not properly managed contributes to a growing environmental crisis. Together, we have the power to change this narrative. By embracing sustainable practices, reducing plastic waste, and supporting a circular economy, we can protect our environment for future generations. The time to act is now—because our planet needs us.
+              </p>
+              <div id="cards">
+          
+                <div class="card1">
+                    <div class="overlay">
+                        <h2>Protecting Nature</h2>
+                        <p>Plastic pollution is suffocating our oceans and forests. By taking small steps today, we can reverse the damage and safeguard the beauty of our planet for generations to come.</p>
+                    </div>
+                 
+                </div>
+                <div class="card2">
+                    <div class="overlay">
+                        <h2> Empowering Communities</h2>
+<p>Local communities play a vital role in driving sustainable solutions. Through education and involvement, we can create a movement that benefits people and the environment </p>                    
+</div>
+                 
+              
+                </div>
+                <div class="card3">
+                    <div class="overlay">
+                        <h2> Innovating for the Future</h2>
+<p>Innovation holds the key to a cleaner tomorrow. By advancing recycling technologies and adopting circular economy practices, we can pave the way for a sustainable future.</p>
+                      </div>
+                 
+              
+                </div>
+              </div>
+          </div>
+        </div>
+       
+        <!-- hgsssssssssssssssssssssssssssssssssss -->
+      </div>
+
+
+<div id="page11">
+    <!-- About Me Section -->
+    <section class="about-me-section">
+      <div class="container">
+          <div class="row">
+              <!-- Left Column -->
+              <div class="left-column">
+                <h1>Protecting Our Planet Starts with Us</h1>
+<p>Our planet is at a tipping point. Now, more than ever, we must take measurable steps to reduce our environmental impact, manage our resources responsibly, and engage communities in waste management efforts to ensure a sustainable future.</p>
+                  
+                  <!-- Accordion -->
+                  <div class="accordion">
+                      <div class="accordion-item">
+                          <div class="accordion-header">
+                            Measure
+
+                          </div> 
+                          <div class="accordion-content">
+              <p>Quantify the plastic used across the  value chain and assess how much ends  up in nature. This is the foundation of
+                plastic stewardship</p></div>
+                      </div>
+                      <div class="accordion-item">
+                        <div class="accordion-header">
+                          reduce
+                     </div> 
+                          <div class="accordion-content">
+                            <p>Reduce or eliminate unnecessary  plastic.
+                              Redesign for reuse and recycling.  Increase recycled content.
+                              </p>   
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                        <div class="accordion-header">
+                          manage
+                        </div>                           <div class="accordion-content">
+<p>Finance plastic waste collection and  recycling infrastructure to increase the  likelihood that plastic remaining in the  value chain will be managed properly.
+</p>                          </div>
+                      </div>
+                      <div class="accordion-item">
+                        <div class="accordion-header">
+                          engage
+                        </div>                         <div class="accordion-content">
+<p>Communicate about waste  management efforts and share best
+  practices.
+  </p>                        </div>
+                    </div>
+                  </div>
+              </div>
+
+              <!-- Right Column -->
+              <div class="right-column">
+                  <img  data-sec="a" src="nandhu-kumar-5NGTf4oD8RA-unsplash.jpg" alt="About Me Image">
+                  <img data-sec="b" src="nandhu-kumar-5NGTf4oD8RA-unsplash.jpg" alt="About Me Image">
+                  <img data-sec="c" src="eryxson-fonseca-iTzjvS-1IXw-unsplash.jpg" alt="">
+                  <img data-sec="d" src="eryxson-fonseca-iTzjvS-1IXw-unsplash.jpg" alt="">
+
+
+              </div>
+          </div>
+      </div>
+  </section>
+
+ 
+
+</div>
+<!--  -->
+<section class="benefits-section">
+  <h1 class="title">Benefits of Investing in Plastic Credits</h1>
+  <p class="intro-text">
+      Incorporating plastic credits into plastic reduction and sustainability strategies can significantly contribute to achieving ESG and plastic stewardship objectives. Other benefits include:
+  </p>
+
+  <div class="tiles-container">
+      <div class="tile">
+          <img src="https://images.unsplash.com/photo-1600418725276-a399595aac45?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Planet image" class="tile-img">
+          <h2>For Planet</h2>
+          <p>Scale plastic waste collection to <strong>reduce environmental pollution</strong>.</p>
+      </div>
+
+      <div class="tile">
+          <img src="https://plus.unsplash.com/premium_photo-1663039947303-0fad26f737b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="People image" class="tile-img">
+          <h2>For People</h2>
+          <p>Improve livelihoods, enhance <strong>health and safety</strong> for informal waste workers, and foster <strong>equity and inclusion</strong>.</p>
+      </div>
+
+      <div class="tile">
+          <img src="https://images.unsplash.com/photo-1526951521990-620dc14c214b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Economy image" class="tile-img">
+          <h2>Economic Advantage</h2>
+          <p>Ensure proper plastic management, generate a <strong>recycled plastic supply</strong>, and accelerate the shift to a <strong>circular economy</strong>.</p>
+      </div>
+  </div>
+</section>
+</div>
+<!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-content">
+      <img src="due-drop-high-resolution-logo-transparent.png" alt="">
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>We are committed to creating a sustainable future through innovative practices and solutions to reduce plastic waste.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#privacy-policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+  </div>
+
+</footer>
+
+  <div id="page12">
+    <div id="moving-last">
+        <div class="con">
+            <h1>EXPERIENCES</h1>
+            <div id="gola"></div>
+            <h1>CONTENT</h1>
+            <div id="gola"></div>
+            <h1>ENVIRONMENTS</h1>
+            <div id="gola"></div>
+        </div>
+        <div class="con">
+            <h1>EXPERIENCES</h1>
+            <div id="gola"></div>
+            <h1>CONTENT</h1>
+            <div id="gola"></div>
+            <h1>ENVIRONMENTS</h1>
+            <div id="gola"></div>
+        </div>
+        <div class="con">
+            <h1>EXPERIENCES</h1>
+            <div id="gola"></div>
+            <h1>CONTENT</h1>
+            <div id="gola"></div>
+            <h1>ENVIRONMENTS</h1>
+            <div id="gola"></div>
+        </div>
+    </div>
+
+
+
+
+<!-- 
+<div id="page333">
+<h1>saniyaaaaaaaaaaaaaaaaa</h1>
+</div> -->
+
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+      integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="crossorigin="anonymous"referrerpolicy="no-referrer"></script>
+     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+        crossorigin="anonymous"referrerpolicy="no-referrer"></script>
+
+   
+
+<script src="3.js"></script>
+
+
+</body>
